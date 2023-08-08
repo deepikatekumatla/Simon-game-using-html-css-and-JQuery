@@ -91,7 +91,7 @@ function userinput()
       if(nxt==false)
          {
             sound("wrong");
-                $("h1").text("Game Over,Press a Key To Restart"); 
+                $("h1").text("Game Over,Press 'a' Key To Restart"); 
                 pattern=[];
                 userr=[];
     
