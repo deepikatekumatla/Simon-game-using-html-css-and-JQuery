@@ -69,11 +69,11 @@ function userinput()
 
     
         var nxt=arrayEquals();
-        if(nxt==="false")
+        if(nxt==="false" || nxt==false)
         {
             sound("wrong");
 
-            $("h1").text("Game Over,Press a Key To Restart"); 
+            $("h1").text("Game Over,Press 'a' Key To Restart"); 
                 pattern=[];
                 userr=[];
                   j=1;
@@ -88,17 +88,7 @@ function userinput()
             nextSequence();
           }, 1000);
        }
-      if(nxt==false)
-         {
-            sound("wrong");
-                $("h1").text("Game Over,Press 'a' Key To Restart"); 
-                pattern=[];
-                userr=[];
-    
-                  j=1;
-                  userlevel=0;
-        }
-       
+      
 
 }
 function sound(currentColor)
